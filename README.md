@@ -2,11 +2,23 @@
 
 This config uses 💤 LazyVim
 
+## Language Support
+
+Extras are enabled for TypeScript, Vue, JSON, Go, PHP, and Prettier formatting.
+
 ## Modifications
 
-- Windows can be resized with Alt + Arrow keys
-- A terminal can be opened with Ctrl+`
-  - To open a second terminal, press 2 + <C-`>
-- There are custom settings to enable Volar 2.0 for Vue developement.
-  - Volar 2.0 no longer wraps tsserver and so this config enables both LSPs to run on vue files
-- Most files are not hidden by default in the file tree (NeoTree). The remaining hidden files can be toggles with H
+- Hidden files and gitignored files are shown by default in the explorer (toggle with H/I)
+- VSCode theme is used as the colorscheme
+- PHP uses intelephense instead of phpactor
+
+## Setup
+
+### Intelephense (PHP)
+
+To use the premium intelephense license, create the license file:
+
+```
+mkdir -p ~/intelephense
+echo "YOUR_KEY_HERE" > ~/intelephense/licence.txt
+```
